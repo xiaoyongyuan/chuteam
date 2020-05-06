@@ -1,0 +1,231 @@
+.home{
+  .home-context{
+    display: flex;
+    .home-title{
+      font-size:18px;
+      color:rgba(51,51,51,1);
+      padding: 10px 14px;
+    }
+    .homeLeft{
+      width: 60%;
+      .homeleft-top{
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff;
+        align-items: center;
+        height:180px;
+        border-radius:5px;
+        .homeleft-pserson{
+          width:210px;
+          height:120px;
+          padding-left: 24px;
+          padding-top: 20px;
+        }
+        .homeleft-pserson p:nth-child(1){
+            font-size:14px;
+            color:rgba(102,102,102,1);
+            margin-bottom: 6px;
+        }
+        .homeleft-pserson p:nth-child(2){
+            font-size:18px;
+            font-weight:bold;
+            color:rgba(51,51,51,1);
+            margin-bottom: 6px;
+        }
+        .nikeName{
+          position: relative;
+          background:rgba(228,238,255,1);
+          border:1px solid rgba(162,196,254,1);
+        }
+        .nikeName:after{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          content: " ";
+          display: block;
+          width: 90px;
+          height: 90px;
+          border-top-left-radius: 90px;
+          background: url("../../assets/images/user.png") no-repeat;
+          background-position: 74% 65%;
+          background-size: 34% 40%;
+          background-color:#CFE0FF ;
+        }
+        .unprocessed{
+          position: relative;
+          background:rgba(254,244,222,1);
+          border:1px solid rgba(255,226,174,1);
+        }
+        .unprocessed:after{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          content: " ";
+          display: block;
+          width: 90px;
+          height: 90px;
+          border-top-left-radius: 90px;
+          background: url("../../assets/images/unhandle.png") no-repeat;
+          background-position: 74% 65%;
+          background-size: 34% 40%;
+          background-color:#FFEEC6 ;
+        }
+        .sameDay{
+          position: relative;
+          background:rgba(236,255,228,1);
+          border:1px solid rgba(190,236,177,1);
+        }
+        .sameDay:after{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          content: " ";
+          display: block;
+          width: 90px;
+          height: 90px;
+          border-top-left-radius: 90px;
+          background: url("../../assets/images/check.png") no-repeat;
+          background-position: 74% 65%;
+          background-size: 34% 40%;
+          background-color:#DDFFCF ;
+        }
+        .warning{
+          position: relative;
+          background:rgba(251,245,255,1);
+          border:1px solid rgba(234,209,255,1);
+        }
+        .warning :after{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          content: " ";
+          display: block;
+          width: 90px;
+          height: 90px;
+          border-top-left-radius: 90px;
+          background: url("../../assets/images/warning.png") no-repeat;
+          background-position: 74% 65%;
+          background-size: 34% 40%;
+          background-color:#F7ECFF;
+        }
+      }
+      .homeleft-center{
+        margin: 20px 0;
+        background-color: #fff;
+        height:278px;
+        border-radius:5px;
+        position: relative;
+        .police-context{
+          display: flex;
+          .police-item{
+            width:158px;
+            height:198px;
+            border-radius:10px;
+            margin: 0 14px;
+            border:1px solid rgba(204,204,204,1);
+            .police-name{
+              display: inline-block;
+              width: 100%;
+              text-align: center;
+              color:rgba(51,51,51,1);
+            }
+            .police-warning{
+              width: 80%;
+              height:30px;
+              background:rgba(255,241,245,1);
+              border-radius:5px;
+              margin: 0 auto;
+              text-align: center;
+              line-height: 30px;
+              color:rgba(245,35,35,1);
+              font-size:14px;
+            }
+            .pass-warning{
+              width: 80%;
+              height:30px;
+              background:rgba(241,241,245,1);
+              border-radius:5px;
+              margin: 0 auto;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color:rgba(3,190,46,1);
+              font-size:14px;
+            }
+            .police-img{
+              display: inline-block;
+              width: 15px;
+              height: 14px;
+              background: url("../../assets/images/icon_warning.png") no-repeat;
+              background-size: 100% 100%;
+              margin-right: 5px;
+            }
+            .pass-img{
+              display: inline-block;
+              width: 15px;
+              height: 14px;
+              background: url("../../assets/images/icon_pass.png") no-repeat;
+              background-size: 100% 100%;
+              margin-right: 5px;
+              padding-top: 4px;
+            }
+            img{
+              width:100%;
+              height:138px;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+            }
+          }
+        }
+        .more{
+          position: absolute;
+          right: 0;
+          top:40%;
+          width:20px;
+          height:78px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          border:1px solid rgba(204,204,204,1);
+          border-right: none;
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+          color:rgba(204,204,204,1);
+          cursor: pointer;
+        }
+        .more:hover{
+          background-color:#e4eeff;
+          color: #666666;
+        }
+      }
+      .homeleft-bottom{
+        height: 359px;
+        border-radius:5px;
+        background-color: #fff;
+      }
+    }
+    .homeRight{
+      width: 40%;
+      background-color: #fff;
+      margin-left: 20px;
+      .homeScroll{
+        height: 789px;
+        overflow-y: auto;
+      }
+      .homeTab{
+        width: 96%;
+        margin:0 auto;
+        .ant-table-thead>tr>th{
+          background-color: #F1F1F5;
+        }
+        .ant-table-tbody tr{
+          border-radius:5px;
+        }
+        .ant-table-tbody tr:nth-of-type(even){
+          background-color: #F1F1F5;
+        }
+      }
+    }
+  }
+}

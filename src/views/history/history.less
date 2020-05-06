@@ -1,0 +1,178 @@
+.historyWrap{
+    .listWrap{
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px; 
+        margin-top: 20px;
+        .flexWrap{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            .historyItem{
+                width: calc(14vw - 50px);
+                min-width: 360px;
+                height: 130px;
+                margin: 15px;
+                background-color: #fff;
+                border-radius: 10px;
+                display: flex;
+                box-shadow:0px 0px 10px 5px rgba(145,145,145,0.1);
+                position: relative;
+                overflow:hidden;
+                .imgWrap{
+                    width: 160px;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+                .historyInfo{
+                    padding: 15px;
+                    .companyName{
+                        font-size:16px;
+                        color:#333333;
+                        font-weight: bold;
+                        line-height: 26px;
+                    }
+                    .location{
+                        width: 160px;
+                        color:#666666;
+                        font-size:14px;
+                        line-height: 22px;
+                        white-space: nowrap; 
+                        overflow: hidden;
+                        text-overflow:ellipsis;
+                    }
+                    .handleName{
+                        width: 160px;
+                        color:#666666;
+                        font-size:14px;
+                        line-height: 22px;
+                        display: inline-block;
+                        white-space: nowrap; 
+                        overflow: hidden;
+                        text-overflow:ellipsis;
+                        span{
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .pass{
+                    width: 0;
+                    height: 0;
+                    border-color: transparent white;
+                    border-width: 0px 60px 60px 0px;
+                    border-style: solid;
+                    position: absolute;
+                    right: 0;
+                    border-color: transparent #03BE92 !important;
+                 }
+                 .noPass{
+                    width: 0;
+                    height: 0;
+                    border-color: transparent white;
+                    border-width: 0px 60px 60px 0px;
+                    border-style: solid;
+                    position: absolute;
+                    right: 0;
+                    border-color: transparent #FF3636 !important;
+                 }
+                 .xuanzhuan {
+                    position: absolute;
+                    color: #000;
+                    right: -58px;
+                    display: inline-block;
+                    top: 12px;
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    color: white;
+                    font-size: 12px;
+                    font-weight: bold;
+                    letter-spacing:3px;
+                    padding: 2px;
+                }
+            }
+            .historyItem:hover{
+                box-shadow:0px 0px 10px 5px rgba(145,145,145,0.25);
+            }
+        }
+    }
+}
+
+.processDetailModal{
+    width: 970px !important;
+    .ant-modal-body {
+        height: 512px;
+        padding: 40px;
+        font-size: 12px;
+    }
+    .ant-modal-content{
+        border-radius: 10px;
+    }
+    .detailWrap{
+        display: flex;
+        .detailImage{
+            width: 636px;
+            height: 432px;
+            margin-right: 25px;
+        }
+        .itemWrap{
+            width: 230px;
+            height: 432px;
+            box-shadow:0px 0px 10px 5px rgba(145,145,145,0.1);
+            border-radius:10px;
+            padding: 10px 20px;
+            img{
+                vertical-align: super;
+            }
+            .title{
+                color:#666666;
+            }
+            .detailItem{
+                height: 28px;
+                line-height: 28px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px #eeeeee solid;
+                .icon{
+                    width: 14px;
+                    height: 14px;
+                    margin: 0px 3px;
+                    margin-bottom: 2px;
+                }
+                .textPass{
+                    line-height: 27px;
+                    color: #03BE92;
+                }
+                .textWarning{
+                    line-height: 27px;
+                    color: #F52323;
+                }
+                .statusWrap{
+                    display: flex;
+                    line-height: 42px;
+                }
+            }
+            .detailItemLast{
+                border-bottom: none;
+                margin-bottom: 8px;
+            }
+            .infoItem{
+                height: 28px;
+                line-height: 28px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px #eeeeee solid;
+                .result{
+                    width: 110px;
+                    text-align: right;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            .infoItemLast{
+                border-bottom: none;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

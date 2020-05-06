@@ -1,0 +1,146 @@
+.workbenchWrap{
+    .topWrap{
+        display: flex;
+        height: 570px;    
+        .warningList{
+            width:100%;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            .title{
+                height:40px;
+                line-height: 40px;
+                background-color: #3457DC;
+                color:#fff;
+                text-align: center;
+                font-size: 16px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            .list{
+                overflow: auto;
+                height:460px;
+                font-size: 16px;
+                .item{
+                    display: flex;
+                    justify-content: space-between;
+                    //height:40px;
+                    line-height: 40px;
+                    border-radius: 5px;
+                    .index{
+                        width: 60px;
+                        text-align:center;
+                        color:#333333;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .infoWrap{
+                        width: 100%;
+                        .info{
+                            display: flex;
+                        }
+                        .name{
+                            width: 80%;
+                            color:#fff;
+                            text-align: center;
+                        }
+                        .btn{
+                            width: 80px;
+                            text-align: center;
+                            color:#999999;
+                            cursor: pointer;
+                        }
+                        .btn:hover{
+                            color: #FF3636;
+                        }
+                       
+                    }  
+                }
+            }
+            .item:nth-child(odd){
+                background-color: #F1F1F5;
+            }
+            .deleteAll{
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color:#FF3636;
+                cursor: pointer;
+                width: 310px;
+                margin: 0px auto;
+                margin-bottom: 10px;
+                border:1px solid #3457DC;
+                color:#3457DC;
+                font-size: 16px;
+            }
+            .deleteAll:hover{
+                background-color:#3457DC;
+                color: #fff;
+            }
+        }
+    }
+    .bottomWrap{
+        display: flex;
+        justify-content: space-between;
+        .info{
+            width: 50%;
+            .infoItem{
+                display: flex;
+                padding: 0px 20px;
+                height: 45px;
+                line-height: 45px;
+                justify-content: space-between;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+            .infoItem:nth-child(odd){
+                background-color: #F1F1F5;
+            }
+        }
+        .actions{
+            width: 50%;
+            margin-left: 20px;
+            padding: 20px;
+            background-color: #fff;
+            font-size: 16px;
+            .typeBtns{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .typeItem{
+                    margin: 5px 10px;
+                    display: flex;
+                    vertical-align: middle;
+                    min-width: 180px;
+                    width: calc(13vw - 33px);
+                    .title{
+                        width: 120px;
+                        text-align: center;
+                        line-height: 35px;
+                    }
+                    .btn{
+                        width: 80px;
+                        height:35px;
+                        line-height: 35px;
+                        text-align: center;
+                        color:#fff;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    .environmentBtn{
+                        width: 80px;
+                        height:35px;
+                        line-height: 35px;
+                        text-align: center;
+                        border-radius: 4px;
+                        color: #3357DB;
+                        border: 2px solid #cccccc;
+                        font-size: 26px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
